@@ -1,0 +1,57 @@
+@import '~src/scss/variables';
+
+nav {
+    font-weight: bolder;
+    padding-top: 2%;
+    background-color: #557A95;    
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 999999999;
+  ul {
+    margin: 0;
+    padding: 0.5%;
+    list-style: none;
+    width: 70%;
+  }
+
+  li { 
+      border-right-color: #9494a0;
+      padding-right: 2%;
+      border-right: 1px solid black;
+      height: fit-content;
+      padding-left: 2%;
+      cursor: pointer;
+     }
+
+  li:last-child {
+    border: 0;
+  }
+
+  li:hover {
+    color: #e8ddd5;
+  }
+
+  a {
+    display: block;
+    padding: 6px 12px;
+    text-decoration: none;
+  }
+}
+
+h2 {
+    font-family: 'Fredoka One', cursive;
+    background-color: #e8ddd5;
+    background-clip: text;
+    color: transparent;
+    width: fit-content;
+    padding: 3%;
+}
+
+.brandText {
+    width: 30%;
+}
+
+.highlight {
+  color: #e8ddd5;
+}
