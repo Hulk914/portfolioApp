@@ -3,7 +3,7 @@
 nav {
     font-weight: bolder;
     padding-top: 2%;
-    background-color: #557A95;    
+    background-color: $primary-background-color;    
     position: fixed;
     width: 100%;
     top: 0;
@@ -29,7 +29,7 @@ nav {
   }
 
   li:hover {
-    color: #e8ddd5;
+    color: $primary-heading-text-color;
   }
 
   a {
@@ -41,7 +41,7 @@ nav {
 
 h2 {
     font-family: 'Fredoka One', cursive;
-    background-color: #e8ddd5;
+    background-color: $primary-heading-text-color;
     background-clip: text;
     color: transparent;
     width: fit-content;
@@ -53,5 +53,5 @@ h2 {
 }
 
 .highlight {
-  color: #e8ddd5;
+  color: $primary-heading-text-color;
 }

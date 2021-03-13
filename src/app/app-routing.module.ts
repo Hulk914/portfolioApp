@@ -1,3 +1,6 @@
+import { AboutComponent } from './about/about.component';
+import { HobbiesComponent } from './hobbies/hobbies.component';
+import { ContactComponent } from './contact/contact.component';
 import { HomeSkillsComponent } from './home-skills/home-skills.component';
 import { HomeComponent } from './home/home.component';
 import { NgModule } from '@angular/core';
@@ -12,6 +15,18 @@ const routes: Routes = [
   {
     path: 'experience',
     component: HomeSkillsComponent
+  },
+  {
+    path: 'contact',
+    component: ContactComponent
+  },
+  {
+    path: 'hobbies',
+    component: HobbiesComponent
+  },
+  {
+    path: 'about',
+    component: AboutComponent
   },
   { path: '', redirectTo: 'home', pathMatch: 'full' },
   { path: '**', redirectTo: 'home', pathMatch: 'full' }];

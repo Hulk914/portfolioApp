@@ -8,6 +8,10 @@ import { MyIntroComponent } from './my-intro/my-intro.component';
 import { HomeSkillsComponent } from './home-skills/home-skills.component';
 import { CardWrapperComponent } from './card-wrapper/card-wrapper.component';
 import { HomeComponent } from './home/home.component';
+import { ContactComponent } from './contact/contact.component';
+import { ContactCardLayoutComponent } from './contact-card-layout/contact-card-layout.component';
+import { HobbiesComponent } from './hobbies/hobbies.component';
+import { AboutComponent } from './about/about.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +20,11 @@ import { HomeComponent } from './home/home.component';
     MyIntroComponent,
     HomeSkillsComponent,
     CardWrapperComponent,
-    HomeComponent
+    HomeComponent,
+    ContactComponent,
+    ContactCardLayoutComponent,
+    HobbiesComponent,
+    AboutComponent
   ],
   imports: [
     BrowserModule,

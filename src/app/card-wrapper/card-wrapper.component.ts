@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-card-wrapper',
@@ -8,10 +9,16 @@ import { Component, Input, OnInit } from '@angular/core';
 export class CardWrapperComponent implements OnInit {
   @Input() title = '';
   @Input() linkText = '';
-  
-  constructor() { }
+  @Input() iconArray = [];
+  @Input() routeURL = '';
+
+  constructor(private router: Router) { }
 
   ngOnInit(): void {
+  }
+
+  navigateToLink() {
+    this.router.navigate([this.routeURL]);
   }
 
 }

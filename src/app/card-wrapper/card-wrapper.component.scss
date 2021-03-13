@@ -1,18 +1,28 @@
+@import '~src/scss/variables';
+
 .image-holder {
     img {
-        height: 50px;
+        height: 40px;
         padding-right: 2%;
     }
+    height: 200px;
+    overflow-y: auto;
 }
 
 .card-body {
-    min-height: 250px;
+    min-height: $card-min-height;
 }
 
 .card {
-    width: 18rem;
+    width: $card-width;
 }
 
-button.btn-link {
+.linkTxt {
     text-decoration: underline;
+    text-align: center;
+    cursor: pointer;
+}
+
+.imgText {
+    font-size: small;
 }

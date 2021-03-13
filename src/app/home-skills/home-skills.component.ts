@@ -1,3 +1,4 @@
+import { PortfolioService } from './../portfolio.service';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -6,10 +7,15 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./home-skills.component.scss']
 })
 export class HomeSkillsComponent implements OnInit {
-
-  constructor() { }
+  languages: { image: string; text: string; }[];
+  frameworks: { image: string; text: string; }[];
+  tools: { image: string; text: string; }[];
+  constructor(private portService: PortfolioService) { }
 
   ngOnInit(): void {
+    this.languages = this.portService.languages;
+    this.frameworks = this.portService.frameworks;
+    this.tools = this.portService.tools;
   }
 
 }
