@@ -1,8 +1,8 @@
 <div class="card">
     <div class="card-body">
         <h5 class="card-title text-center">{{title}}</h5>
-        <div class="image-holder d-flex justify-content-between flex-wrap">
-            <div class="m-2 d-flex flex-column align-items-center" *ngFor="let imgObj of iconArray">
+        <div class="image-holder d-flex justify-content-left flex-wrap">
+            <div class="m-2 d-flex flex-column align-items-center imgdiv" *ngFor="let imgObj of iconArray">
                 <img [src]="imgObj?.image" alt="not found">
                 <p class="imgText">{{imgObj?.text}}</p>
             </div>

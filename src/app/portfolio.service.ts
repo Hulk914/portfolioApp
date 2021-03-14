@@ -19,7 +19,8 @@ export class PortfolioService {
     { image: 'assets/bootstrap.png', text: 'bootstrap' },
     { image: 'assets/react.png', text: 'react' },
     { image: 'assets/express.png', text: 'expressJS' },
-    { image: 'assets/angularB.png', text: 'angular material' }
+    { image: 'assets/primeng.png', text: 'primeNG' },
+    { image: 'assets/angularB.png', text: 'material' }
   ];
 
   tools = [
@@ -30,7 +31,7 @@ export class PortfolioService {
     { image: 'assets/postman.png', text: 'postman' },
     // { image: 'assets/chromeD.png', text: 'dev tools' },
     { image: 'assets/jira.png', text: 'jira' },
-    { image: 'assets/eclipse.png', text: 'eclipse' }
+    // { image: 'assets/eclipse.png', text: 'eclipse' }
   ];
 
   companyTech = {
