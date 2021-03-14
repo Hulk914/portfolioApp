@@ -8,7 +8,7 @@ nav {
     width: 100%;
     top: 0;
     z-index: 999999999;
-  ul {
+  .desktop-ul {
     margin: 0;
     padding: 0.5%;
     list-style: none;
@@ -59,9 +59,31 @@ h2 {
   color: $primary-heading-text-color;
 }
 
+.mobile-ul {
+  display: none;
+}
+
 @media screen and (max-width: 774px) {
-  ul {
+  .desktop-ul {
       display: none !important;
+  }
+
+  .mobile-ul {
+    padding-top: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style: none;
+    margin-left: 0;
+    padding-left: 0;
+    li {
+      padding: 0.5rem;
+      border-right: 0;
+    }
+  }
+
+  .nav-holder {
+    border-bottom: 1px solid black;
   }
 
   .brandText {
@@ -72,6 +94,7 @@ h2 {
     img {
       display: block;
       width: 20%;
+      cursor: pointer;
     }
   }
 }

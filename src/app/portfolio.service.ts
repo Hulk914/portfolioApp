@@ -27,10 +27,10 @@ export class PortfolioService {
     { image: 'assets/docker.png', text: 'docker' },
     { image: 'assets/npm.png', text: 'npm' },
     { image: 'assets/git.png', text: 'git' },
-    { image: 'assets/chromeD.png', text: 'dev tools' },
+    { image: 'assets/postman.png', text: 'postman' },
+    // { image: 'assets/chromeD.png', text: 'dev tools' },
     { image: 'assets/jira.png', text: 'jira' },
-    { image: 'assets/eclipse.png', text: 'eclipse' },
-    { image: 'assets/postman.png', text: 'postman' }
+    { image: 'assets/eclipse.png', text: 'eclipse' }
   ];
 
   companyTech = {
