@@ -8,5 +8,5 @@
             </div>
         </div>
     </div>
-    <p class="linkTxt" (click)="navigateToLink()">{{linkText}}</p>
+    <p *ngIf="linkText" class="linkTxt" (click)="navigateToLink()">{{linkText}}</p>
 </div>

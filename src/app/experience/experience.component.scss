@@ -1,0 +1,18 @@
+@import '~src/scss/variables';
+
+.selectStyle {
+    width: fit-content;
+}
+
+.detailsWrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.about {
+    width: 100%;
+}
+
+.selectHead {
+    font-weight: 900;
+}

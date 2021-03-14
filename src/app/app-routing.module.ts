@@ -1,3 +1,4 @@
+import { ExperienceComponent } from './experience/experience.component';
 import { AboutComponent } from './about/about.component';
 import { HobbiesComponent } from './hobbies/hobbies.component';
 import { ContactComponent } from './contact/contact.component';
@@ -14,7 +15,7 @@ const routes: Routes = [
   },
   {
     path: 'experience',
-    component: HomeSkillsComponent
+    component: ExperienceComponent
   },
   {
     path: 'contact',

@@ -12,6 +12,8 @@ import { ContactComponent } from './contact/contact.component';
 import { ContactCardLayoutComponent } from './contact-card-layout/contact-card-layout.component';
 import { HobbiesComponent } from './hobbies/hobbies.component';
 import { AboutComponent } from './about/about.component';
+import { ExperienceComponent } from './experience/experience.component';
+import { AboutProductComponent } from './about-product/about-product.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +26,9 @@ import { AboutComponent } from './about/about.component';
     ContactComponent,
     ContactCardLayoutComponent,
     HobbiesComponent,
-    AboutComponent
+    AboutComponent,
+    ExperienceComponent,
+    AboutProductComponent
   ],
   imports: [
     BrowserModule,

@@ -50,8 +50,28 @@ h2 {
 
 .brandText {
     width: 30%;
+    img {
+      display: none;
+    }
 }
 
 .highlight {
   color: $primary-heading-text-color;
+}
+
+@media screen and (max-width: 774px) {
+  ul {
+      display: none !important;
+  }
+
+  .brandText {
+    width: 70%;
+    display: flex;
+    justify-content: left;
+
+    img {
+      display: block;
+      width: 20%;
+    }
+  }
 }
