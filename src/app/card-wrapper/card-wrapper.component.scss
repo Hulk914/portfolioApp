@@ -9,6 +9,28 @@
     overflow-y: auto;
 }
 
+::-webkit-scrollbar {
+    width: 0.15em;
+    height: 0.15em;
+}
+::-webkit-scrollbar-button {
+    background: $primary-background-color;
+}
+::-webkit-scrollbar-track-piece {
+    background: $primary-heading-text-color;
+}
+::-webkit-scrollbar-thumb {
+    background: #f8f8ff;
+}
+
+.card-body-height {
+    height: 200px;;
+}
+
+.card-body-height-large {
+    height: 255px;
+}
+
 .card-body {
     min-height: $card-min-height;
 }
@@ -25,6 +47,7 @@
 
 .imgText {
     font-size: small;
+    text-align: center;
 }
 
 .imgdiv {

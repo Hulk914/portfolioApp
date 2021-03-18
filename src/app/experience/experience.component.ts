@@ -41,6 +41,11 @@ export class ExperienceComponent implements OnInit {
           break;
         }
         case 4: {
+          this.iconArray = this.portService.companyTech.infyTrainee.iconArray;
+          this.detailsInfo = this.portService.companyTech.infyTrainee.aboutProd;
+          break;
+        }
+        case 5: {
           this.iconArray = this.portService.companyTech.ttl.iconArray;
           this.detailsInfo = this.portService.companyTech.ttl.aboutProd;
           break;

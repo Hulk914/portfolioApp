@@ -11,6 +11,7 @@ export class CardWrapperComponent implements OnInit {
   @Input() linkText = '';
   @Input() iconArray = [];
   @Input() routeURL = '';
+  @Input() isExperience = false;
 
   constructor(private router: Router) { }
 
