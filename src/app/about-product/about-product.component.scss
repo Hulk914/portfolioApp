@@ -1,7 +1,12 @@
-@import '~src/scss/variables';
+@import "~src/scss/variables";
+
+.card {
+  border-radius: 2%;
+  border: 2px solid $primary-background-color;
+}
 
 @media screen and (max-width: 800px) {
-    .card {
-        width: 100vw;
-    }
+  .card {
+    width: 100vw;
+  }
 }

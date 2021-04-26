@@ -37,6 +37,8 @@
 
 .card {
     width: $card-width;
+    border-radius: 10%;
+    border: $border;
 }
 
 .linkTxt {

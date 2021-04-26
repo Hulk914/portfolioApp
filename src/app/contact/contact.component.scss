@@ -37,6 +37,8 @@ h5 {
 
 .card {
     min-width: $card-width;
+    border-radius: 10%;
+    border: $border;
     // background-color: #5d5c61;
 }
 
