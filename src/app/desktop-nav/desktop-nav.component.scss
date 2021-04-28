@@ -1,13 +1,13 @@
-@import '~src/scss/variables';
+@import "~src/scss/variables";
 
 nav {
-    font-weight: bolder;
-    padding-top: 2%;
-    background-color: $primary-background-color;    
-    position: fixed;
-    width: 100%;
-    top: 0;
-    z-index: 999999999;
+  font-weight: bolder;
+  padding-top: 2%;
+  background-color: $primary-background-color;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 999999999;
   .desktop-ul {
     margin: 0;
     padding: 0.5%;
@@ -15,14 +15,14 @@ nav {
     width: 70%;
   }
 
-  li { 
-      border-right-color: #9494a0;
-      padding-right: 2%;
-      border-right: 1px solid black;
-      height: fit-content;
-      padding-left: 2%;
-      cursor: pointer;
-     }
+  li {
+    border-right-color: #9494a0;
+    padding-right: 2%;
+    border-right: 1px solid black;
+    height: fit-content;
+    padding-left: 2%;
+    cursor: pointer;
+  }
 
   li:last-child {
     border: 0;
@@ -40,19 +40,19 @@ nav {
 }
 
 h2 {
-    font-family: 'Fredoka One', cursive;
-    background-color: $primary-heading-text-color;
-    background-clip: text;
-    color: transparent;
-    width: fit-content;
-    padding: 3%;
+  font-family: "Fredoka One", cursive;
+  background-color: $primary-heading-text-color;
+  background-clip: text;
+  color: transparent;
+  width: fit-content;
+  padding: 3%;
 }
 
 .brandText {
-    width: 30%;
-    img {
-      display: none;
-    }
+  width: 30%;
+  img {
+    display: none;
+  }
 }
 
 .highlight {
@@ -63,9 +63,13 @@ h2 {
   display: none;
 }
 
+.navContainer {
+  height: 55px;
+}
+
 @media screen and (max-width: 774px) {
   .desktop-ul {
-      display: none !important;
+    display: none !important;
   }
 
   .mobile-ul {
@@ -84,6 +88,10 @@ h2 {
 
   .nav-holder {
     border-bottom: 1px solid black;
+  }
+
+  .navContainer {
+    height: 55px;
   }
 
   .brandText {
