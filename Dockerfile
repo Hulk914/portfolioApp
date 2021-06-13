@@ -1,30 +1,25 @@
 # Stage 1
-FROM node:alpine3.10 as angular-build
-
-# RUN mkdir -p /app
-
+FROM node:12-alpine as buildContainer
 WORKDIR /app
-
-COPY ./package*.json /app/
-
+COPY ./package.json ./package-lock.json /app/
 RUN npm install
+COPY . /app
+RUN npm run build:ssr
 
-COPY ./ /app/
+#stage 2
 
-RUN npm run build:ssr && npm run serve:ssr
+FROM node:8-alpine
+WORKDIR /app
+# Copy dependency definitions
+COPY --from=buildContainer /app/package.json /app
 
-# Stage 2
+# Get all the code needed to run the app
+COPY --from=buildContainer /app/dist /app/dist
 
-# FROM node:12
+# COPY --from=buildContainer /app/dist-server /app/dist-server
 
-# RUN mkdir -p /usr/src/app
+# Expose the port the app runs in
+EXPOSE 4000
 
-# WORKDIR /usr/src/app
-
-# COPY --from=angular-build /app/ /usr/src/app/
-
-# COPY --from=angular-build /app/dist/my-portfolio /usr/src/app/
-
-# EXPOSE 8080
-
-# CMD [ "node", "server.js" ]
+# Serve the app
+CMD ["npm", "run", "serve:ssr"]
