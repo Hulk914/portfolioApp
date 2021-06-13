@@ -11,20 +11,20 @@ RUN npm install
 
 COPY ./ /app/
 
-RUN npm run build
+RUN npm run build:ssr && npm run serve:ssr
 
 # Stage 2
 
-FROM node:12
+# FROM node:12
 
-RUN mkdir -p /usr/src/app
+# RUN mkdir -p /usr/src/app
 
-WORKDIR /usr/src/app
+# WORKDIR /usr/src/app
 
-COPY --from=angular-build /app/ /usr/src/app/
+# COPY --from=angular-build /app/ /usr/src/app/
 
-COPY --from=angular-build /app/dist/my-portfolio /usr/src/app/
+# COPY --from=angular-build /app/dist/my-portfolio /usr/src/app/
 
-EXPOSE 8080
+# EXPOSE 8080
 
-CMD [ "node", "server.js" ]
+# CMD [ "node", "server.js" ]

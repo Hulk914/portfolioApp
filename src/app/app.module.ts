@@ -31,7 +31,7 @@ import { AboutProductComponent } from './about-product/about-product.component';
     AboutProductComponent
   ],
   imports: [
-    BrowserModule,
+    BrowserModule.withServerTransition({ appId: 'serverApp' }),
     AppRoutingModule
   ],
   providers: [],
